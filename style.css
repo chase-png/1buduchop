@@ -19,7 +19,7 @@
 }
 
 body {
-    background: url("/assets/Kraff-2-scaled-e1668716162827.jpg") no-repeat fixed;
+    background: url("assets/Kraff-2-scaled-e1668716162827.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
     background-color: #141414;

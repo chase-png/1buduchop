@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #d8d7d7;
+    scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: #141414;
+}
+
+.acc {
+    color: yellow;
+}
+
+body {
+    background: url("/assets/Kraff-2-scaled-e1668716162827.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #141414;
+    margin: 0;
+    padding: 20px 0px 20px 20px;
+}
+
+main {
+    padding: 0;
+    overflow-y: scroll;
+    display: flexbox;
+    scroll-snap-type: mandatory;
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: x-small;
+    letter-spacing: 3px;
+    background-color: #1414144b;
+}
+
+.m-sect {
+    background-color: #11111173;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    float: left;
+    height: max-content;
+    /* overflow-y: hidden; */
+    width: 55.5%;
+}
+
+.n-hol {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0;
+    height: min-content;
+    bottom: 30px;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nsn {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    padding: 5px;
+}
+
+#lg-a {
+    display: flex;
+    align-items: center;
+    height: min-content;
+}
+
+a {
+    text-decoration: none;
+    color: #e9e1e1;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #ce3750;
+}
+
+.st {
+    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1 {
+    color: #d8d7d7;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+
+#logo {
+    width: 6em;
+    max-width: 128px;
+}
+
+#c-i {
+    width: 95%;
+    margin: auto;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 20px;
+    right: 20px;
+    width: 38%;
+    height: 96vh;
+    overflow: hidden;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.m-sl {
+    top: 20px;
+    right: 20px;
+    object-fit: cover;
+    /* width: 100%; */
+}
+
+.m-sli {
+    cursor: pointer;
+    height: 100%;
+    scale: 1.5;
+    overflow: hidden;
+    width: 100%;
+    display: none;
+
+}
+
+.m-sli.active {
+    display: block;
+}
+
+.m-sect p {
+    background-color: #141414;
+    padding: 10px;
+}
+
+#news {
+    flex-wrap: wrap;
+}
+
+#about {
+    display: flex;
+    height: 96vh;
+}
+
+#about p,
+#about span {
+    font-size: 1rem;
+    background-color: #13121296;
+    text-wrap: wrap;
+    width: 100%;
+}
+
+#about p::first-letter {
+    initial-letter: 3;
+    padding: 5px;
+}
+
+#music {
+    display: flex;
+}
+
+.vxt {
+    margin: auto;
+    text-transform: uppercase;
+    user-select: none;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+#music span {
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#booking {
+    padding-top: 5%;
+    display: flex;
+}
+
+#booking div span a {
+    text-wrap: wrap;
+}
+
+#booking div {
+    padding: 3%;
+    width: 55%;
+    background: #0e0d0d;
+}
+
+#booking div span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+}
+
+#booking span p {
+    user-select: all;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #13121296;
+    padding: 5%;
+    width: 45%;
+    height: 100%;
+}
+
+form span {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input {
+    width: 60%;
+    padding: 11px;
+    outline: none;
+    border-radius: 0.2rem;
+    border: none;
+}
+
+button {
+    padding: 12px;
+    width: fit-content;
+    background-color: #ce3750;
+    border: none;
+    border-radius: 0.2rem;
+    color: #e9e1e1;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #9e293d;
+    cursor: pointer;
+}
+
+.sosm {
+    display: none;
+}
+
+iframe {
+    width: 100%;
+    /* height: 100%; */
+}
+
+@media screen and (max-width: 980px) {
+
+    #logo {
+        width: 50px;
+    }
+
+    p {
+        text-wrap: wrap;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .sosm {
+        background-color: #ffffff;
+        display: flex;
+        position: relative;
+        margin: auto;
+    }
+
+    .n-hol {
+        background-color: #ffffff;
+        width: 95%;
+        display: flex;
+        position: sticky;
+        top: 0;
+    }
+
+    .nsn {
+        position: relative;
+        gap: 10px;
+    }
+
+    .st {
+        position: relative;
+    }
+
+    .m-sect {
+        width: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .sm-cont {
+        width: 95%;
+    }
+
+    #about div p {
+        width: 90%;
+        margin: auto;
+    }
+
+    #music {
+        min-height: 100vh;
+    }
+
+    #music span p a {
+        color: #9e293d;
+        text-decoration: underline;
+    }
+
+    #booking div {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form span {
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    ul {
+        background-color: transparent;
+    }
+
+    ul a,
+    .n-hol h1 {
+        color: #0e0d0d;
+    }
+
+    .hi {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+    }
+
+    footer span {
+        color: #0e0d0d !important;
+        font-size: small;
+        font-weight: 600;
+    }
+}
